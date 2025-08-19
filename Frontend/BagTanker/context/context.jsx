@@ -7,7 +7,7 @@ function Nyheder() {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const res = await fetch("http://localhost:3306/api/news"); // replace 5000 with your backend port
+        const res = await fetch("http://localhost:3306/api/news"); 
         const data = await res.json();
         setNews(data);
       } catch (err) {
